@@ -19,5 +19,5 @@ async def view_todos(request: Request):
         Todo(title="Buy bread"),
     ]
     return templates.TemplateResponse(
-        request=request, name="index.html", context={"todos": todos}
+        request=request, name="view_todos.html", context={"todos": todos}
     )
